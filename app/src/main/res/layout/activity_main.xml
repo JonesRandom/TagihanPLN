@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.JonesRandom.TagihanPLN.MainActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. ID Pelanggan"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/get_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="numberSigned"
+                android:background="@drawable/bg"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bulan"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <Spinner
+                        android:id="@+id/spinBulan"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/bg"
+                        android:layout_marginTop="10dp"
+                        android:spinnerMode="dialog"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tahun"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="numberSigned"
+                        android:maxLength="4"
+                        android:hint="2016"
+                        android:background="@drawable/bg"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/get_tahun" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="CEK TAGIHAN"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:id="@+id/cek_tagihan"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
